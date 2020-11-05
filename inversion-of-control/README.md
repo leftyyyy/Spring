@@ -116,3 +116,9 @@
       ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
       //we pass name of the actual configuration file
    ```
+
+  **Step 3: Retrieve the bean from the container**
+  
+  ```Java
+     Coach theCoach = context.getBean("myCoach", Coach.class);
+  ```
