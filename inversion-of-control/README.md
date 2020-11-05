@@ -25,7 +25,7 @@
    ```
     
    **MyApp.java**
-    ```java:
+   ```java:
       public class MyApp.java{
         public static void main(String[] args){
           //Create the object
@@ -35,4 +35,4 @@
           System.out.println(theCoach.getDailyWorkOut());
         }
       }
-    ```
+   ```
