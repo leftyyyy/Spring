@@ -16,23 +16,23 @@
    * **TrackCoach.java**
    
    **BaseballCoach.java**
-    ```java
-    public class BaseballCoach{
-      public String getDailyWorkOut(){
-        return "practice batting";
+    ```java:
+      public class BaseballCoach{
+        public String getDailyWorkOut(){
+          return "practice batting";
+        }
       }
-    }
     ```
     
    **MyApp.java**
-    ```
-    public class MyApp.java{
-      public static void main(String[] args){
-        //Create the object
-        BaseballCoach theCoach = new BaseballCoach();
-        
-        //use the object
-        System.out.println(theCoach.getDailyWorkOut());
+    ```java:
+      public class MyApp.java{
+        public static void main(String[] args){
+          //Create the object
+          BaseballCoach theCoach = new BaseballCoach();
+          
+          //use the object
+          System.out.println(theCoach.getDailyWorkOut());
+        }
       }
-    }
     ```
