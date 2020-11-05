@@ -6,3 +6,5 @@
   ###### Coding Scenario
    > We're creating a app that will make use of a Coach, like a baseball Coach and this Coach should be able to give us DailyWorkOut method.
    > App should be configurable means this app should easily work for Coach of another Sport like Hockey, Cricket, Tennis, etc.
+   
+   ![images/IoC_01.png]
