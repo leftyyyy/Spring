@@ -31,6 +31,7 @@
         public static void main(String[] args){
           //Create the object
           Coach theCoach = new BaseballCoach();
+          Coach trackCoach = new TrackCoach();
           
           //use the object
           System.out.println(theCoach.getDailyWorkOut());
@@ -43,4 +44,14 @@
       public interface Coach {
         public String getDailyWorkOut();
       }
+  ```
+  
+  **TrackCoach.java**
+  ```Java
+     public class TrackCoach implements Coach{
+        @Override
+        public String getDailyWorkOut(){
+            return "run 5 KM";
+        }
+     }
   ```
