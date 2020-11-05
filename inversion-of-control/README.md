@@ -112,7 +112,7 @@
       * GenericWebApplicationContext
       * others...
       
-    ```Java
-       ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-       //we pass name of the actual configuration file
-    ```
+   ```Java
+      ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+      //we pass name of the actual configuration file
+   ```
