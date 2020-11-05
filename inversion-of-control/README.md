@@ -8,3 +8,31 @@
    > App should be configurable means this app should easily work for Coach of another Sport like Hockey, Cricket, Tennis, etc.
    
    ![IoC coding scenario](images/IoC_01.jpg)
+  
+  ###### Code demo (Rough prototype)
+   * **MyApp.java** main method
+   * **BaseballCoach.java**
+   * **Coach.java** interface after refactoring
+   * **TrackCoach.java**
+   
+   **BaseballCoach.java**
+    ```java
+    public class BaseballCoach{
+      public String getDailyWorkOut(){
+        return "practice batting";
+      }
+    }
+    ```
+    
+   **MyApp.java**
+    ```
+    public class MyApp.java{
+      public static void main(String[] args){
+        //Create the object
+        BaseballCoach theCoach = new BaseballCoach();
+        
+        //use the object
+        System.out.println(theCoach.getDailyWorkOut());
+      }
+    }
+    ```
