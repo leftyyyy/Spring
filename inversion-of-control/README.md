@@ -93,7 +93,7 @@
   
   **Step 1: Configuring your spring Beans**
     **File: applicationContext.xml**
-    ```xml
+    ```Xml
        <beans ...>
             
             <bean id="myCoach"
