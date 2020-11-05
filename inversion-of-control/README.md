@@ -17,7 +17,8 @@
    
    **BaseballCoach.java**
    ```Java
-      public class BaseballCoach{
+      public class BaseballCoach implements Coach{
+        @Override
         public String getDailyWorkOut(){
           return "practice batting";
         }
@@ -29,10 +30,17 @@
       public class MyApp.java{
         public static void main(String[] args){
           //Create the object
-          BaseballCoach theCoach = new BaseballCoach();
+          Coach theCoach = new BaseballCoach();
           
           //use the object
           System.out.println(theCoach.getDailyWorkOut());
         }
+      }
+   ```
+   
+   **Coach.java
+   ```Java
+      public interface Coach {
+        public String getDailyWorkOut();
       }
    ```
