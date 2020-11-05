@@ -35,6 +35,7 @@
           
           //use the object
           System.out.println(theCoach.getDailyWorkOut());
+          System.out.println(trackCoach.getDailyWorkOut());
         }
       }
    ```
@@ -55,3 +56,11 @@
         }
      }
   ```
+  
+  - [ ] App should be configurable
+  - [x] Easily change the coach for another sports
+  
+  > Till now we've made this app for any different type of Coach.
+  > But the other requirement was the actual code implementation should be **configurable**. And right now it's not really configurable. Because it's ***hardcoded*** rightnow.
+  > Idealy it will be great if we could actually read the implementaton name from a config file, and then make use of it. So then we could easilt swap by only changing a config file instead of having a change in source code.
+  > *Spring was designed to address this exact problem.*
