@@ -57,3 +57,28 @@
          }
       }
    ```
+   
+   **Step 2: Create a constructor in your class for injections**
+   ***BaseballCoach.java***
+   ```Java
+      public class BaseballCoach implements Coach {
+         private FortuneService fortuneService;
+         
+         public BaseballCoach(FortuneService theFortuneService){
+            fortuneService = theFortuneService;
+         }
+         ...
+      }
+   ```
+   
+   **Step 3: Configure the dependency injection in Spring config file**
+   ***applicationContext.xml***
+   ```Xml
+      <bean id="myFortuneService"
+         class="fully qualified class name">
+      </bean>
+      <bean id="myCoach"
+         class="fully qualified class name">
+            <constructor-arg ref="myFortuneService" />
+      </bean>
+   ```
