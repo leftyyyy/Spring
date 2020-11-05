@@ -16,7 +16,7 @@
    * **TrackCoach.java**
    
    **BaseballCoach.java**
-   ```java:
+   ```Java:
       public class BaseballCoach{
         public String getDailyWorkOut(){
           return "practice batting";
@@ -25,7 +25,7 @@
    ```
     
    **MyApp.java**
-   ```java:
+   ```Java:
       public class MyApp.java{
         public static void main(String[] args){
           //Create the object
