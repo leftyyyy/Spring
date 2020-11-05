@@ -93,11 +93,11 @@
   
   **Step 1: Configuring your spring Beans**
     **File: applicationContext.xml**
-    ```Xml
-       <beans ...>
+   ```Xml
+      <beans ...>
             
-            <bean id="myCoach"
-               class="full class path name">
-            </bean>
-       </beans>
-    ```
+           <bean id="myCoach"
+              class="full class path name">
+           </bean>
+      </beans>
+   ```
