@@ -11,7 +11,8 @@
 
    **we simply out source the construction and injection of your object to an external entity.**
      in this case that's the car factory.
-     
+
+   
    **How this works in Spring world?**
    > Remeber spring has an Object factory.
    > So when we retrieve an Object like Coach object, this coach object mayhave some additional dependencies.
