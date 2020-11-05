@@ -101,3 +101,18 @@
            </bean>
       </beans>
    ```
+   
+   > *Note*: **id is simply the id name that our java application will use to retrieve the bean**
+   
+  **Step 2: Create a spring container**
+    * Spring container is generally known as **ApplicationContext**
+    * Specialized implementations
+      * ClassPathXmlApplicationContext
+      * AnnotationConfigApplicationContext
+      * GenericWebApplicationContext
+      * others...
+      
+    ```Java
+       ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+       //we pass name of the actual configuration file
+    ```
