@@ -21,3 +21,64 @@
    > So just like the car that's ready to drive, here we get an Object that's ready to use.
    
    ![](images/dpixml_02.png)
+   
+   
+   **Demo Example**
+      * Our Coach already provides daily workouts
+      * Now will also provide daily fortunes
+         * New helper: FortuneService
+         * This is a *dependency*
+   
+  #### Injection Types
+   * There are many types of injection with Spring.
+   * Most two common are
+      * Constructor Injection
+      * Setter Injection
+   * auto-wiring
+   
+  ##### Developement Process - Constructor Injection
+   1. Define the dependency interface and class
+   2. Create a constructor in your class for injections
+   3. Configre the dependency injection in Spring config file.
+   
+   **Step 1: Define the dependency inferface and class**
+   
+   ***FortuneService.java***
+   ```Java
+      public interface FortuneService {
+         public String getFortune();
+      }
+   ```
+   ***HappyFortuneService.java***
+   ```Java
+      public class HappyFortuneService implements FortuneService {
+         public String getFortune(){
+            return "Today is your lucly day!";
+         }
+      }
+   ```
+   
+   **Step 2: Create a constructor in your class for injections**
+   ***BaseballCoach.java***
+   ```Java
+      public class BaseballCoach implements Coach {
+         private FortuneService fortuneService;
+         
+         public BaseballCoach(FortuneService theFortuneService){
+            fortuneService = theFortuneService;
+         }
+         ...
+      }
+   ```
+   
+   **Step 3: Configure the dependency injection in Spring config file**
+   ***applicationContext.xml***
+   ```Xml
+      <bean id="myFortuneService"
+         class="fully qualified class name">
+      </bean>
+      <bean id="myCoach"
+         class="fully qualified class name">
+            <constructor-arg ref="myFortuneService" />
+      </bean>
+   ```
