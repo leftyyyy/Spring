@@ -1,11 +1,11 @@
-# Bean Scope
+# **Bean Scope**
 
 - Scope refers to the lifecyle of a bean.
 - How long does the bean live?
 - How many instances are created?
 - How is the bean shared?
 
-> Default Scope: Singleton
+> **Default Scope: Singleton**
 
 ```Xml
     <beans ... >
@@ -16,7 +16,7 @@
     </beans>
 ```
 
-> What is a singleton? **
+> **What is a singleton?**
 
 - Spring Container creates only one instance of the bean, by default.
 - It is cached in memory.
