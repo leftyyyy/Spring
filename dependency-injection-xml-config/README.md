@@ -82,3 +82,25 @@
             <constructor-arg ref="myFortuneService" />
       </bean>
    ```
+   
+   ##### How Spring Processes your Config File (Constructor Injection)
+   ***applicationContext.xml***
+   ```Xml
+      <bean id="myFortuneService"
+         class="full qualified class name">
+      </bean>
+      <bean id="myCoach"
+         class="full qualified class name">
+            <constructor-arg ref="myFortuneService" />
+      </bean>
+   ```
+   
+   > The Spring Framework will perform operations behind the scenes for you.
+   ***Based on above config file Spring Framework will do this work***
+   ```Java
+      HappyFortuneService myFortuneService = new HappyFortuneService();
+      BaseballCoach myCoach = new BaseballCoach(myFortuneService);
+   ```
+   ![](images/dpixml_03.jpg)
+   
+   
